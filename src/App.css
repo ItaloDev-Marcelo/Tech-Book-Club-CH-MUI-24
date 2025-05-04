@@ -1,0 +1,59 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box ;
+  font-size: 100%;
+}
+
+body {
+  font-size: 1em;
+}
+
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./assets/fonts/inter-v18-latin-regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Martian mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./assets/fonts/martian-mono-v3-latin-regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Martian mono';
+  font-style: normal;
+  font-weight: 600;
+  src: url(./assets/fonts/martian-mono-v3-latin-600.woff2) format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Martian mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url(./assets/fonts/martian-mono-v3-latin-700.woff2) format('woff2');
+}
+
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-almost-white: hsl(17, 41%, 97%);
+  --clr-light-grey: hsl(17, 12%, 89%);
+  --clr-dark-desaturated-blue: hsl(195, 23%, 28%);
+  --clr-dark-blue: hsl(194, 78%, 11%);
+  --clr-lightest-salmon: hsl(24, 100%, 97%);
+  --clr-very-light-salmon: hsl(22, 100%, 91%);
+  --clr-light-salmon: hsl(22, 99%, 72%);
+  --ft-mono: 'Martian mono',  system-ui, sans-serif;
+  --ft-mono: 'Inter',  system-ui, sans-serif;
+}
+
+
