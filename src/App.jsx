@@ -1,4 +1,5 @@
 import './App.css'
+import Header from './Pages/Header'
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
 
   return (
    <>
+   <Header/>
    </>
   )
 }

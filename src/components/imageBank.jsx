@@ -12,7 +12,15 @@ import barkBg from '../assets/images/pattern-dark-bg.svg';
 import lightBg from '../assets/images/pattern-light-bg.svg';
 import glow  from '../assets/images/pattern-glow.svg';
 import avatar from '../assets/images/image-avatars.webp';
-
+import heroImageM from '../assets/images/image-hero-mobile.webp';
+import heroImageT from '../assets/images/image-hero-tablet.webp';
+import heroImageD from '../assets/images/image-hero-desktop.webp';
+import togetherM from '../assets/images/image-read-together-mobile.webp';
+import togetherT from '../assets/images/image-read-together-tablet.webp';
+import togetherD from '../assets/images/image-read-together-desktop.webp';
+import averageM from '../assets/images/image-not-average-mobile.webp';
+import averageT from '../assets/images/image-not-average-tablet.webp';
+import averageD from '../assets/images/image-not-average-desktop.webp';
 const Imagens = {
      arrowDown:arrowDown ,
      arrowUp:arrowUp  ,
@@ -27,7 +35,16 @@ const Imagens = {
      patternDarkBg: barkBg,
      patternLightBg:lightBg ,
      glow : glow ,
-     avatar: avatar
+     avatar: avatar,
+     heroImageM: heroImageM,
+     heroImageT: heroImageT,
+     heroImageD: heroImageD,
+     togetherM: togetherM,
+     togetherT: togetherT,
+     togetherD: togetherD,
+     averageM: averageM ,
+     averageT: averageT,
+     averageD: averageD
 }
 
 export default Imagens
