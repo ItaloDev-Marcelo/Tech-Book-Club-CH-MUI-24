@@ -11,9 +11,9 @@ function App() {
 
   return (
    <>
-   <Header/>
+   {/* <Header/> */}
    <main>
-    <AboutSection/>
+    {/* <AboutSection/> */}
     <MiddlePage/>
    </main>
    </>
