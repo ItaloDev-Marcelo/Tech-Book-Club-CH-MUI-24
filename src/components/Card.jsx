@@ -12,7 +12,7 @@ const CardComponent = ({Tx1, Tx2, Width, Border, ImageText, bgColor,
            <Typography varient='h2'>
               {CardT1} <br/> {CardT2} 
               <Typography variant='p' display={month ? 'block' : 'none'}>
-                  /{month}
+                  /month
               </Typography> 
            </Typography>
            <hr/>
@@ -24,7 +24,7 @@ const CardComponent = ({Tx1, Tx2, Width, Border, ImageText, bgColor,
        </CardContent>
        <CardActions>
           <Btn Width={Width} Border={Border}
-           Image={Image} imageTxt={ImageText} bgColor={bgColor} btnLabel={btnLabel} />
+           Image={'no image'} imageTxt={ImageText} bgColor={bgColor} btnLabel={btnLabel} />
        </CardActions>
      </Card>
    )

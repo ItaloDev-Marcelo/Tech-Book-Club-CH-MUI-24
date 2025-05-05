@@ -6,16 +6,16 @@ import CheckComponent from "../components/CheckItems";
 export default function AboutSection() {
   const GROWTOGETHER = [
     {
-      Title: "Monthly curated tech reads selected by industry experts",
+      title: "Monthly curated tech reads selected by industry experts",
     },
     {
-      Title: "Virtual and in-person meetups for deep-dive discussions",
+      title: "Virtual and in-person meetups for deep-dive discussions",
     },
     {
-      Title: "Early access to new tech book releases",
+      title: "Early access to new tech book releases",
     },
     {
-      Title: "Author Q&A sessions with tech thought leaders",
+      title: "Author Q&A sessions with tech thought leaders",
     }
   ];
 
