@@ -1,5 +1,6 @@
-import {Stack, Box, Typography} from '@mui/material';
+import {Stack, Typography} from '@mui/material';
 import Images from '../components/imageBank'
+import Stars from './starts';
 const OurStars = () => {
   return (
       <Stack  className='ourStars' sx={{display: 'flex', flexDirection: 'row', alignItems: 'center'}} component='article'>
@@ -7,13 +8,7 @@ const OurStars = () => {
             <img src={Images.avatar} alt='avatar'  className='avatar' />
           </Stack>
           <Stack>
-          <Box className='star-box'>
-              <img src={Images.star} alt='star-icon'/>
-              <img src={Images.star} alt='star-icon'/>
-              <img src={Images.star} alt='star-icon'/>
-              <img src={Images.star} alt='star-icon'/>
-              <img src={Images.star} alt='star-icon'/>
-           </Box>
+             <Stars/>
              <Typography variant='p'>200+ developers joined already</Typography> 
           </Stack>
       </Stack>
