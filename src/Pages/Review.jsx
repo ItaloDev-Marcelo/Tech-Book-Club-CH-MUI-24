@@ -5,7 +5,7 @@ export default function Review() {
     return (
         <Stack>
            <Stars/>
-           <Typography variant="h4">"This book club transformed my technical 
+           <Typography variant="h4" className="from-top">"This book club transformed my technical 
             reading from a solitary activity into an 
             enriching community experience. The discussions are gold!"</Typography>
            <Typography variant="p" className="author">Sarah Chen, Software Architect</Typography>

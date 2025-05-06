@@ -8,7 +8,7 @@ export default function MiddlePage() {
       <Stack component='section'>
          <Journey/>
          <Stack component='section' className='Membership-options'>
-            <Typography variant="h4">Membership options</Typography>
+            <Typography variant="h4" className="from-top">Membership options</Typography>
             <Stack id='card-container'>
             <CardComponent Tx1='1 book/month' Tx2='Online forums'
              Width='300px' Border='2px solid #000' ImageText={false}  bgColor='hsl(17, 41%, 97%)' 

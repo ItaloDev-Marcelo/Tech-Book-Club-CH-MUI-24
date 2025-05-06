@@ -10,13 +10,13 @@ export default function AboutSection() {
   return (
     <Stack component="section">
       <Stack component="section" className="grow-together">
-        <Stack className='banner'>
+        <Stack className='banner from-left'>
             <ImageSelectedNow x1='block' x2='none' x3='none' Img={Images.togetherM} />
             <ImageSelectedNow x1='none' x2='block' x3='none' Img={Images.togetherT} />
             <ImageSelectedNow x1='none' x2='none' x3='block' Img={Images.togetherD} />
         </Stack>
 
-        <Stack component='section' className='information'>
+        <Stack component='section' className='information from-right'>
         <Typography varient="h3">Read together, grow together</Typography>
         <Box>
              {
@@ -29,7 +29,7 @@ export default function AboutSection() {
       </Stack>
 
       <Stack component="section" className="average">
-        <Stack className='banner'>
+        <Stack className='banner from-right'>
             <ImageSelectedNow x1='block' x2='none' x3='none' Img={Images.averageM} />
             <ImageSelectedNow x1='none' x2='block' x3='none' Img={Images.averageT} />
             <ImageSelectedNow x1='none' x2='none' x3='block' Img={Images.averageD} />
@@ -38,7 +38,7 @@ export default function AboutSection() {
             </Stack>
         </Stack>
 
-        <Stack component='section' className='information'>
+        <Stack component='section' className='information from-left'>
         <Typography varient="h3">Not your <br/> average <br/> book <span>club</span>
         </Typography>
         <Typography variant="p">

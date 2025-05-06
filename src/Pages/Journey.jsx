@@ -24,12 +24,12 @@ export default function Journey() {
   return (
     <Stack component="article">
       <Typography variant="h4">Your tech reading journey</Typography>
-      <Box id="journal-list" sx={{display: 'flex', flexDirection: {xs: 'column', lg: 'row'}}}>
+      <Box id="journal-list" className='from-top' sx={{display: 'flex', flexDirection: {xs: 'column', lg: 'row'}}}>
         {
           JOURNEYDATA.map((item, index) => {
             return (
                 <Stack key={index}>
-                     <Stack>
+                     <Stack className="from-left">
                          <Stack className="square-num">
                             {item.num}
                          </Stack>

@@ -11,7 +11,7 @@ const CardComponent = ({Tx1, Tx2, Width, Border, ImageText, bgColor,btnLabel,
       
       
    return (
-     <Card>
+     <Card className='from-top'>
        <CardContent>
          <Stack>
              <Typography variant='h2'>{CardT1} <br/> {`${CardT2}

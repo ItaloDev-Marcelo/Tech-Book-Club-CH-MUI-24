@@ -14,7 +14,7 @@ export default function Header() {
 
               <Stack id='container'>
               <Stack component='section'>
-                 <Typography variant='h1'>Join the <br/> ultimate <br/> tech <br/> book club</Typography>
+                 <Typography variant='h1' className='from-left'>Join the <br/> ultimate <br/> tech <br/> book club</Typography>
                  <Typography variant='p'>Turn your reading time into learning
                     time with fellow tech enthusiasts. 
                     Get curated recommendations,
@@ -26,10 +26,12 @@ export default function Header() {
                       <OurStars />
                 </Box>
               </Stack>
-
+              
+              <Stack className='from-right'>
               <ImageSelectedNow x1='block' x2='none' x3='none' Img={Images.heroImageM} />
               <ImageSelectedNow x1='none' x2='block' x3='none' Img={Images.heroImageT} />
               <ImageSelectedNow x1='none' x2='none' x3='block' Img={Images.heroImageD} />
+              </Stack>
               </Stack>
              
         </Stack>
