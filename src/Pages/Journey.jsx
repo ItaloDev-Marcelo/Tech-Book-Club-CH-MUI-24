@@ -22,22 +22,24 @@ export default function Journey() {
   ];
 
   return (
-    <Stack component="article">
-      <Typography variant="h4">Your tech reading journey</Typography>
-      <Box id="journal-list" className='from-top' sx={{display: 'flex', flexDirection: {xs: 'column', lg: 'row'}}}>
+    <Stack component="article" marginY='1.2em'  backgroundColor='pink'>
+      <Typography variant="h4" textAlign={{lg: 'center'}} fontSize={{xs: '2.3em'}}
+       marginY={3}  width={{xs: '200px', lg: '100%'}}>Your tech reading journey</Typography>
+      <Box id="journal-list" className='from-top'
+       sx={{display: 'flex', flexDirection: {xs: 'column', lg: 'row'}}}>
         {
           JOURNEYDATA.map((item, index) => {
             return (
                 <Stack key={index}>
-                     <Stack className="from-left">
-                         <Stack className="square-num">
-                            {item.num}
+                     <Stack className="from-left " marginY={2}>
+                         <Stack className="square-num" sx={{width: '50px', height: '50px', border: '2px solid #000', borderRadius: '7px', textAlign: 'center'}}>
+                         <Typography variant="p" className="journey-text " marginTop='.7em'>{item.num} </Typography>  
                          </Stack>
                         <Stack display={{xs: 'none', lg: 'block'}}>
                         <img src={Images.patternArrow} alt="arrow-lef" />
                         </Stack>
                      </Stack>
-                     <Typography variant="p" className="journey-text">{item.title}</Typography>
+                     <Typography variant="p" className="journey-text title" marginY={{xs: 1, lg: 0}} width='290px'>{item.title}</Typography>
                 </Stack>
             )
           })  

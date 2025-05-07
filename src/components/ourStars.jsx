@@ -9,7 +9,7 @@ const OurStars = () => {
           </Stack>
           <Stack>
              <Stars/>
-             <Typography variant='p'>200+ developers joined already</Typography> 
+             <Typography variant="p  text" >200+ developers joined already</Typography> 
           </Stack>
       </Stack>
   )

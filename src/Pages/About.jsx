@@ -8,16 +8,17 @@ export default function AboutSection() {
  
 
   return (
-    <Stack component="section">
-      <Stack component="section" className="grow-together">
-        <Stack className='banner from-left'>
+    <Stack component="section" id="about" margin={{xs: '5em 0', lg: '5em 3em'}}>
+      <Stack component="section" className="grow-together" marginY={2} 
+       sx={{display: 'flex',flexDirection: {xs: 'column', lg: 'row'}, justifyContent: {lg: 'space-between'}}}>
+        <Stack className='banner from-left'  width={{lg: '40%'}}>
             <ImageSelectedNow x1='block' x2='none' x3='none' Img={Images.togetherM} />
             <ImageSelectedNow x1='none' x2='block' x3='none' Img={Images.togetherT} />
             <ImageSelectedNow x1='none' x2='none' x3='block' Img={Images.togetherD} />
         </Stack>
 
-        <Stack component='section' className='information from-right'>
-        <Typography varient="h3">Read together, grow together</Typography>
+        <Stack component='section' className='information from-right'  width={{lg: '41%'}}>
+        <Typography variant="h3" fontSize={{xs: '2em'}} width={{xs: '200px', lg: '400'}} marginY='1em'>Read together, grow together</Typography>
         <Box>
              {
                 growTogether.map((item, index) => {
@@ -28,24 +29,25 @@ export default function AboutSection() {
         </Stack>
       </Stack>
 
-      <Stack component="section" className="average">
-        <Stack className='banner from-right'>
-            <ImageSelectedNow x1='block' x2='none' x3='none' Img={Images.averageM} />
-            <ImageSelectedNow x1='none' x2='block' x3='none' Img={Images.averageT} />
-            <ImageSelectedNow x1='none' x2='none' x3='block' Img={Images.averageD} />
-            <Stack display={{xs: 'none', lg: 'block'}}>
-            <img src={Images.techLogo} alt="" id="social-bubble" />
-            </Stack>
-        </Stack>
+      <Stack component="section" className="average" marginY={2}   sx={{display: 'flex',flexDirection: {xs: 'column', lg: 'row'}, justifyContent: {lg: 'space-between'}}}>
+        
 
-        <Stack component='section' className='information from-left'>
-        <Typography varient="h3">Not your <br/> average <br/> book <span>club</span>
-        </Typography>
-        <Typography variant="p">
+        <Stack component='section' className='information-l from-left' alignSelf='center' width={{lg: '40%'}}>
+        <Typography variant="h3"  fontSize={{xs: '2em'}} marginY={2}  width={{xs: '250px', lg: '400'}} >Not your  average book <span> club <img src={Images.patternCircle} alt=''/>  </span></Typography>
+        <Typography variant="p"  className='text'  fontSize='1.4em'>
         Connect with a community that speaks your language
          - from <strong>Python</strong> to <strong>TypeScript</strong> and everything 
         in between. Our discussions blend technical depth with practical applications.
         </Typography>
+        </Stack>
+
+        <Stack className='banner from-right' marginTop='4em' position='relative'   width={{lg: '41%'}}>
+            <ImageSelectedNow x1='block' x2='none' x3='none' Img={Images.averageM} />
+            <ImageSelectedNow x1='none' x2='block' x3='none' Img={Images.averageT} />
+            <ImageSelectedNow x1='none' x2='none' x3='block' Img={Images.averageD} />
+            <Stack position='absolute' left='-3em' top='13em'  display={{xs: 'none', lg: 'block'}}>
+            <img src={Images.techLogo} alt="" id="social-bubble" />
+            </Stack>
         </Stack>
       </Stack>
     </Stack>

@@ -1,3 +1,5 @@
+/* reset */
+
 
 * {
   margin: 0;
@@ -53,11 +55,125 @@ body {
   --clr-very-light-salmon: hsl(22, 100%, 91%);
   --clr-light-salmon: hsl(22, 99%, 72%);
   --ft-mono: 'Martian mono',  system-ui, sans-serif;
-  --ft-mono: 'Inter',  system-ui, sans-serif;
+  --ft-mon: 'Inter',  system-ui, sans-serif;
+}
+
+body {
+  padding: 1.5em 1.7em;
+}
+
+.text, li {
+  color: var(--clr-dark-desaturated-blue);
+  font-family: 'Inter', system-ui, sans-serif !important; 
+}
+
+ h1, h3, .journey-text, h2{
+  font-family: 'Martian mono', system-ui, sans-serif !important; 
+  font-weight: 700;
+  /* color: var(--clr-dark-blue); */
+  color: red;
+}
+
+header > br {
+  display: none;
+}
+
+hr {
+  margin: 1.3em 0;
+}
+
+
+ul  {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin: .5em 0;
+  max-width: 90%;
+}
+
+li img {
+  margin-right: 1em;
+}
+
+/* header  */
+
+header #container button {
+  padding: 1em 0;
+
+}
+
+
+button {
+  color: var(--clr-dark-blue) !important; 
+  font-family: 'Martian mono', system-ui, sans-serif !important ;
+  font-weight: 600; 
+}
+/* avatar */
+
+.avatar {
+  width: 75px;
+}
+
+/* fugure container and nav logo  */
+
+a img {
+  width:175px;
+}
+
+figure img {
+  max-width: 100%;
+  border: 7px;
+}
+
+
+.information h3 {
+  line-height: 45px;
+}
+
+.information h3 span {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+
+span > img {
+  position: absolute;
+  left: -.5em;
+  top: -.5em;
+}
+
+.card {
+  border-radius: 7px !important;
 }
 
 
 
-.avatar {
-  width: 75px;
+@media (min-width:1280px)  {
+  header > br {
+    display: block;
+  }
+
+  .information-l {
+    position: relative;
+    top: -2em;
+    left: 3%;
+  }
+
+  span > img {
+    position: absolute;
+    left: 3em;
+    top: 2.3em;
+  }
+
+
+  .card 
+  {
+    width: 330px;
+  }
+
+
 }

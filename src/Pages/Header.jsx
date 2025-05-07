@@ -7,27 +7,33 @@ import ImageSelectedNow from '../components/WhichImage';
 
 export default function Header() {
     return (
-        <Stack component='header'>
-              <Stack component='nav'>
+        <Stack component='header'  padding={{lg: '3em'}} marginBottom='5em'>
+              <Stack component='nav' marginBottom='3em'>
                  <Link href='#'><img src={Logo} alt='tech-book-club' /></Link>
               </Stack>
 
-              <Stack id='container'>
-              <Stack component='section'>
-                 <Typography variant='h1' className='from-left'>Join the <br/> ultimate <br/> tech <br/> book club</Typography>
-                 <Typography variant='p'>Turn your reading time into learning
+              <Stack id='container'  sx={{display: 'flex',flexDirection: {xs: 'column', lg: 'row'}, justifyContent: {lg: 'space-between'}}}>
+              <Stack component='section' width={{lg: '50%'}}>
+                 <Typography variant='h1'  className='from-left'
+                  fontSize={{xs: '3em', lg: '4.25em'}} marginBottom='.5em'  maxWidth={{lg: '445px'}}>Join the  ultimate tech <br/> book club</Typography>
+                 <Typography variant='p' className='text' fontSize='1.4em' lineHeight='30px'
+                  paddingRight={{lg: '2em'}} >Turn your reading 
+                    time into learning
                     time with fellow tech enthusiasts. 
                     Get curated recommendations,
                      join vibrant discussions, and level up your skills 
                      one chapter at a time.</Typography>
-                <Box>
-                      <Btn W1='250px' W2='350px' W3='360px'  Border='1px solid #000' Image={Images.arrowDown} 
+                <Box marginBottom='3em'>
+                       <Box sx={{marginY: '2em'}}>
+                       <Btn W1='250px' W2='350px' W3='360px'  Border='2px solid #000' Image={Images.arrowDown} 
                       imageTxt={true} bgColor='trasparent' btnLabel='REVIEW MEMBERSHIP OPTIONS' />
-                      <OurStars />
+                     
+                       </Box>
+                       <OurStars />
                 </Box>
               </Stack>
               
-              <Stack className='from-right'>
+              <Stack className='from-right' width={{lg: '69%'}} >
               <ImageSelectedNow x1='block' x2='none' x3='none' Img={Images.heroImageM} />
               <ImageSelectedNow x1='none' x2='block' x3='none' Img={Images.heroImageT} />
               <ImageSelectedNow x1='none' x2='none' x3='block' Img={Images.heroImageD} />

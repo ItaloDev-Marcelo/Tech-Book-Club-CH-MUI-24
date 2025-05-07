@@ -8,7 +8,7 @@ export default function Review() {
            <Typography variant="h4" className="from-top">"This book club transformed my technical 
             reading from a solitary activity into an 
             enriching community experience. The discussions are gold!"</Typography>
-           <Typography variant="p" className="author">Sarah Chen, Software Architect</Typography>
+           <Typography variant="p" className="author text" >Sarah Chen, Software Architect</Typography>
         </Stack>
     )
 }
