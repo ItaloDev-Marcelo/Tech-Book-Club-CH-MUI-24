@@ -5,7 +5,7 @@ import CardComponent from "../components/Card";
 
 export default function MiddlePage() {
     return (
-      <Stack component='section'>
+      <Stack component='section' padding={{lg: '2em 4em'}}>
          <Journey/>
          <Stack component='section' className='Membership-options'>
             <Typography variant="h4" className="from-top" marginY='1em' textAlign={{lg: 'center'}}>Membership options</Typography>

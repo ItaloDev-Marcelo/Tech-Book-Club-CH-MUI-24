@@ -45,13 +45,15 @@ function App() {
 
   return (
    <>
+   <div className='container'>
    <Header/>
    <main>
     <AboutSection/>
     <MiddlePage/>
    </main>
     <Review/>
-    <Footer/>
+   </div>
+   <Footer/>
    </>
   )
 }

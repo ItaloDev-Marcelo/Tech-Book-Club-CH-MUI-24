@@ -15,7 +15,8 @@ export default function Header() {
               <Stack id='container'  sx={{display: 'flex',flexDirection: {xs: 'column', lg: 'row'}, justifyContent: {lg: 'space-between'}}}>
               <Stack component='section' width={{lg: '50%'}}>
                  <Typography variant='h1'  className='from-left'
-                  fontSize={{xs: '3em', lg: '4.25em'}} marginBottom='.5em'  maxWidth={{lg: '445px'}}>Join the  ultimate tech <br/> book club</Typography>
+                  fontSize={{xs: '3em', lg: '4.25em'}} marginBottom='.5em'
+                    maxWidth={{lg: '445px'}}>Join the  ultimate tech <br/> book club</Typography>
                  <Typography variant='p' className='text' fontSize='1.4em' lineHeight='30px'
                   paddingRight={{lg: '2em'}} >Turn your reading 
                     time into learning
