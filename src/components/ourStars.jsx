@@ -1,7 +1,7 @@
 import {Stack, Typography} from '@mui/material';
 import Images from '../components/imageBank'
 import Stars from './starts';
-const OurStars = () => {
+const OurStars = ({cor}) => {
   return (
       <Stack  className='ourStars' sx={{display: 'flex', flexDirection: 'row', alignItems: 'center'}} component='article'>
           <Stack marginRight={1}>
@@ -9,7 +9,7 @@ const OurStars = () => {
           </Stack>
           <Stack>
              <Stars/>
-             <Typography variant="p  text" >200+ developers joined already</Typography> 
+             <Typography variant="p  text" color={cor} >200+ developers joined already</Typography> 
           </Stack>
       </Stack>
   )

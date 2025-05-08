@@ -8,10 +8,8 @@ export default function Footer() {
            padding={{xs: '3em 2em', lg: '2.5em 4em'}}
             borderRadius='25px 25px 0 0'>
            <Stack id='footer-header-information'>
-           <Typography variant="h5" fontSize={{xs: '1.3em', lg: '2.5em'}} padding={{lg: '1em 4em'}} textAlign={{md: 'center'}}>"This book club transformed my technical 
-            reading from a solitary activity into an 
-            enriching community experience. The discussions are gold!"</Typography>
-            <Stack alignSelf='center' marginY={4}><OurStars/></Stack>
+           <Typography variant="h5" fontSize={{xs: '2.3em', lg: '4em'}} padding={{lg: '1em 2em'}} textAlign='center'>Ready to debug your reading list?</Typography>
+            <Stack alignSelf='center' marginY={4}><OurStars cor='#fff' /></Stack>
             <Stack alignSelf='center' color='#fff' ><Btn W1='250px' W2='350px' W3='360px' Border='1px solid #000' 
             Image={Imagens.arrowUp} imageTxt={true} bgColor='trasparent' 
             btnLabel='REVIEW MEMBERSHIP OPTIONS' /></Stack>
