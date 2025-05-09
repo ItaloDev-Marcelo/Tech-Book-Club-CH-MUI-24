@@ -26,7 +26,7 @@ export default function Journey() {
     padding={{xs: '1.3em', lg: '0'}} >
       <Typography variant="h4" textAlign={{lg: 'center'}} 
       fontSize={{xs: '2.3em', lg: '3.2em'}} padding='.7em' 
-       marginY={3}  width={{xs: '300px', lg: '100%'}}>Your tech reading journey</Typography>
+       marginY={3}  width={{xs: '300px', lg: '100%'}} className="Title">Your tech reading journey</Typography>
       <Box id="journal-list" className='from-top'
        sx={{display: 'flex', flexDirection: {xs: 'column', lg: 'row'}, 
        justifyContent: {lg: 'space-between'}, padding: {xs: '1em', lg: ' 0 2em'}}}>

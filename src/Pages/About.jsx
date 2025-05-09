@@ -8,7 +8,8 @@ export default function AboutSection() {
  
 
   return (
-    <Stack component="section" id="about" margin={{xs: '5em 0', lg: '5em 3em'}}>
+    <Stack component="section" id="about"
+    margin={{xs: '5em 0', lg: '5em 3em'}}>
       <Stack component="section" className="grow-together" marginY={2} padding={{lg: '0 1em'}} 
        sx={{display: 'flex',flexDirection: {xs: 'column', lg: 'row'},
         justifyContent: {lg: 'space-between'}}}>
@@ -29,7 +30,6 @@ export default function AboutSection() {
         </Box>
         </Stack>
       </Stack>
-
       <Stack component="section" className="average" marginY={2}  
        sx={{display: 'flex',flexDirection: {xs: 'column', lg: 'row'},
         justifyContent: {lg: 'space-between'}}}>
@@ -37,8 +37,10 @@ export default function AboutSection() {
 
         <Stack component='section' className='information-l from-left' alignSelf='center'
          width={{lg: '41%'}}>
-        <Typography variant="h3"  fontSize={{xs: '2em', lg: '3.5em'}} marginY={2} 
-         width={{xs: '250px', lg: '500px'}}  >Not your  average book <span> club <img src={Images.patternCircle} alt=''/>  </span></Typography>
+        <Typography variant="h3" position='relative'  fontSize={{xs: '2em', lg: '3.5em'}} marginY={2} 
+         width={{xs: '250px', lg: '500px'}}  >Not your 
+          average book <span> club <img src={Images.patternCircle} alt=''/> 
+           </span></Typography>
         <Typography variant="p"  className='text'  fontSize='1.4em'>
         Connect with a community that speaks your language
          - from <strong>Python</strong> to <strong>TypeScript</strong> and everything 

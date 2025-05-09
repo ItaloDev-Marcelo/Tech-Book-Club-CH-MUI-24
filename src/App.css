@@ -11,6 +11,7 @@
 
 body {
   font-size: 1em;
+  overflow-x: hidden;
 }
 
 
@@ -55,22 +56,21 @@ body {
   --clr-lightest-salmon: hsl(24, 100%, 97%);
   --clr-very-light-salmon: hsl(22, 100%, 91%);
   --clr-light-salmon: hsl(22, 99%, 72%);
-  --ft-mono: 'Martian mono',  system-ui, sans-serif;
-  --ft-mon: 'Inter',  system-ui, sans-serif;
 }
 
-.container {
+.container, header {
   padding: 1.5em 1.7em;
 }
+
 
 .text, li {
   color: var(--clr-dark-desaturated-blue);
   font-family: 'Inter', system-ui, sans-serif !important; 
 }
 
-  h3, .journey-text, h2{
+  h3, .journey-text, h2, .Title{
   font-family: 'Martian mono', system-ui, sans-serif !important; 
-  font-weight: 700;
+  font-weight: 700 !important;
   color: var(--clr-dark-blue);
 }
 
@@ -83,6 +83,7 @@ header h1  {
   background-clip: text;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
   color: transparent;
+  line-height: 35px;
 }
 
 header > br {
@@ -115,8 +116,10 @@ header #container button {
   padding: 1em 0;
 }
 
+
+
 header, #journal {
-  background-image: url(./assets/images/pattern-light-bg.svg);
+  background: url(./assets/images/pattern-light-bg.svg) hsl(24, 100%, 97%);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -124,7 +127,6 @@ header, #journal {
 
 #journal {
   box-shadow: 1px 1px 5px #000;
-  background-color: var(--clr-almost-white);
 }
 
 
@@ -152,18 +154,17 @@ a img {
 
 figure img {
   max-width: 100%;
+    border-radius: 7px !important;
 }
 
-#about  .banner > figure  > img {
-  border-radius: 7px !important;
-}
+
 
 
 .information h3 {
   line-height: 45px;
 }
 
-.information h3 span {
+span {
   position: relative;
   left: 0;
   top: 0;
@@ -216,8 +217,9 @@ footer  {
 
   span > img {
     position: absolute;
-    left: 3em;
-    top: 2.3em;
+    left: 0;
+    top: -.1em;
+    width: 197px;
   }
 
   header h1  {

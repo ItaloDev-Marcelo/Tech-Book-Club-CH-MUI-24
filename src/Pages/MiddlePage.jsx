@@ -5,10 +5,11 @@ import CardComponent from "../components/Card";
 
 export default function MiddlePage() {
     return (
-      <Stack component='section' padding={{lg: '2em 4em'}}>
+      <Stack component='section' className="MiddlePage" padding={{lg: '2em 4em'}}>
          <Journey/>
          <Stack component='section' className='Membership-options'>
-            <Typography variant="h4" className="from-top" marginY={{xs: '1em', lg: '2em'}} textAlign={{lg: 'center'}}>Membership options</Typography>
+            <Typography variant="h4" className="from-top Title" marginY={{xs: '1em', lg: '2em'}}
+             textAlign={{lg: 'center'}}>Membership options</Typography>
             <Stack id='card-container' marginY='2em'  sx={{display: 'flex',flexDirection: 
                {xs: 'column', lg: 'row'},
                 justifyContent: {lg: 'space-around'}}}>

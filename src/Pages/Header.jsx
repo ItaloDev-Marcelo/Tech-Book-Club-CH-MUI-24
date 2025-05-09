@@ -7,7 +7,7 @@ import ImageSelectedNow from '../components/WhichImage';
 
 export default function Header() {
     return (
-        <Stack component='header'  padding={{lg: '3em'}} marginBottom='5em'>
+        <Stack component='header'  padding={{xs: '2em 3em' ,lg: '3em'}} marginBottom='5em'>
               <Stack component='nav' marginBottom='3em'>
                  <Link href='#'><img src={Logo} alt='tech-book-club' /></Link>
               </Stack>
@@ -15,10 +15,10 @@ export default function Header() {
               <Stack id='container'  sx={{display: 'flex',flexDirection: {xs: 'column', lg: 'row'}, justifyContent: {lg: 'space-between'}}}>
               <Stack component='section' width={{lg: '50%'}}>
                  <Typography variant='h1'  className='from-left'
-                  fontSize={{xs: '3em', lg: '4.25em'}} marginBottom='.5em'
+                  fontSize={{xs: '2.5em', lg: '4.25em'}} marginBottom='.5em'
                     maxWidth={{lg: '445px'}}>Join the  ultimate tech <br/> book club</Typography>
                  <Typography variant='p' className='text' fontSize='1.4em' lineHeight='30px'
-                  paddingRight={{lg: '2em'}} >Turn your reading 
+                  paddingRight={{lg: '2em'}}  >Turn your reading 
                     time into learning
                     time with fellow tech enthusiasts. 
                     Get curated recommendations,

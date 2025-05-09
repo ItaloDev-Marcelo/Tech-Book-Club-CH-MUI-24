@@ -45,8 +45,8 @@ function App() {
 
   return (
    <>
+  <Header/>
    <div className='container'>
-   <Header/>
    <main>
     <AboutSection/>
     <MiddlePage/>
