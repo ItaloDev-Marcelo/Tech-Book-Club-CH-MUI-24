@@ -22,14 +22,17 @@ export default function Journey() {
   ];
 
   return (
-    <Stack component="article" id='journal' marginY={{xs: '1.2em', lg: '4em'}} 
-    padding={{xs: '1.3em', lg: '0'}} >
+    <Stack component="article" id='journal' marginY={{xs: '7em', lg: '4em'}} 
+    padding={{xs: '1.7em 1em', lg: '0'}} position='relative' >
       <Typography variant="h4" textAlign={{lg: 'center'}} 
-      fontSize={{xs: '2.3em', lg: '3.2em'}} padding='.7em' 
-       marginY={3}  width={{xs: '300px', lg: '100%'}} className="Title">Your tech reading journey</Typography>
+      fontSize={{xs: '2.3em', lg: '3.2em'}} padding='.2em' 
+
+       marginY='1.2em'  width={{xs: '400px', lg: '100%'}} className="Title">Your tech reading journey</Typography>
+      <img src={Images.glow } alt='' className='glow-2'/>
       <Box id="journal-list" className='from-top'
        sx={{display: 'flex', flexDirection: {xs: 'column', lg: 'row'}, 
-       justifyContent: {lg: 'space-between'}, padding: {xs: '1em', lg: ' 0 2em'}}}>
+       justifyContent: {lg: 'space-between'}, padding: {xs: '0', lg: ' 0 2em'}}}>
+       
         {
           JOURNEYDATA.map((item, index) => {
             return (
@@ -37,9 +40,11 @@ export default function Journey() {
                      <Stack className="from-left " marginY={1} sx={{display: 'flex', 
                       flexDirection: 'row', justifyContent: { lg: 'space-evenly'}  }}>
 
-                         <Stack className="square-num" sx={{width: '50px', height: '45px',
-                          border: '2px solid #000', borderRadius: '4px', textAlign: 'center', marginBottom: {lg: '.5em'}}}>
-                         <Typography variant="p" className="journey-text " marginTop='.7em'>{item.num} </Typography>  
+                         <Stack className="square-num" sx={{width: {xs: '35px', lg: '50px'}, 
+                         height: {xs: '35px', lg: '45px'},
+                          border: '2px solid #000', borderRadius: '4px', 
+                          textAlign: 'center', marginBottom: {lg: '.5em'}}}>
+                         <Typography variant="p" className="journey-text " marginTop={{xs: '.3em', lg: '.7em'}}>{item.num} </Typography>  
                          </Stack>
                         <Stack display={{xs: 'none', lg: 'block'}}>
                         <img src={Images.patternArrow} alt="arrow-lef" />

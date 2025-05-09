@@ -9,18 +9,18 @@ export default function AboutSection() {
 
   return (
     <Stack component="section" id="about"
-    margin={{xs: '5em 0', lg: '5em 3em'}}>
+    margin={{xs: '1.5em 0', lg: '1em 3em'}}>
       <Stack component="section" className="grow-together" marginY={2} padding={{lg: '0 1em'}} 
-       sx={{display: 'flex',flexDirection: {xs: 'column', lg: 'row'},
+       sx={{display: 'flex',flexDirection: {xs: 'column-reverse', lg: 'row'},
         justifyContent: {lg: 'space-between'}}}>
-        <Stack className='banner from-left Bn'  width={{lg: '45%'}}>
-            <ImageSelectedNow x1='block' x2='none' x3='none' Img={Images.togetherM} />
+        <Stack className='banner from-left Bn'  marginY={{xs: '2em'}}  width={{lg: '45%'}}>
+            <ImageSelectedNow x1='block' x2='none'  x3='none' Img={Images.togetherM} />
             <ImageSelectedNow x1='none' x2='block' x3='none' Img={Images.togetherT} />
             <ImageSelectedNow x1='none' x2='none' x3='block' Img={Images.togetherD} />
         </Stack>
 
         <Stack component='section' className='information from-right'  width={{lg: '50%'}}>
-        <Typography variant="h3" fontSize={{xs: '2em'}} maxWidth='400px' marginY='1em'>Read together, grow together</Typography>
+        <Typography variant="h3" fontSize={{xs: '2em'}} maxWidth='400px' marginY={{lg: '1em'}}>Read together, grow together</Typography>
         <Box>
              {
                 growTogether.map((item, index) => {

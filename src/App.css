@@ -122,12 +122,18 @@ header, #journal {
   background: url(./assets/images/pattern-light-bg.svg) hsl(24, 100%, 97%);
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
+  position: relative ;
+  overflow: hidden;
 }
+
+
+
 
 #journal {
   box-shadow: 1px 1px 5px #000;
+  overflow: hidden;
 }
+
 
 
 .information > div  li {
@@ -182,7 +188,10 @@ span > img {
 }
 
 #card-container > .card:nth-of-type(2) {
-  background-color: var(--clr-almost-white);
+  background: url(./assets/images/pattern-glow.svg) hsl(17, 41%, 97%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top 70px left 50px;
 }
 
 footer  {
@@ -202,6 +211,28 @@ footer  {
 #line {
   width: 100%;
   margin-top: 4em;
+}
+
+
+.glow {
+  position: absolute;
+  top: -5%;
+  left: 7%;
+}
+.glow-2 {
+  position: absolute;
+  top: 15%;
+  left:-4px;
+}
+
+
+
+@media (min-width:960px)  {
+    .card {
+    width: 344px;
+    margin: 0 2em;
+  }
+ 
 }
 
 @media (min-width:1280px)  {
@@ -241,6 +272,19 @@ footer  {
 
 #line {
   width: 80%;
+}
+
+
+.glow {
+  position: absolute;
+  top: -10%;
+  left: 30%;
+}
+
+.glow-2 {
+  position: absolute;
+  top: -2%;
+  left: 40%;
 }
 
 }

@@ -7,12 +7,14 @@ import ImageSelectedNow from '../components/WhichImage';
 
 export default function Header() {
     return (
-        <Stack component='header'  padding={{xs: '2em 3em' ,lg: '3em'}} marginBottom='5em'>
+        <Stack component='header'  padding={{xs: '2em' ,lg: '3em'}}
+         marginBottom={{xs: '2em',lg: '5em'}}>
               <Stack component='nav' marginBottom='3em'>
                  <Link href='#'><img src={Logo} alt='tech-book-club' /></Link>
               </Stack>
 
-              <Stack id='container'  sx={{display: 'flex',flexDirection: {xs: 'column', lg: 'row'}, justifyContent: {lg: 'space-between'}}}>
+              <Stack id='container'  sx={{display: 'flex',flexDirection: 
+                {xs: 'column', lg: 'row'}, justifyContent: {lg: 'space-between'}}}>
               <Stack component='section' width={{lg: '50%'}}>
                  <Typography variant='h1'  className='from-left'
                   fontSize={{xs: '2.5em', lg: '4.25em'}} marginBottom='.5em'
@@ -34,10 +36,11 @@ export default function Header() {
                 </Box>
               </Stack>
               
-              <Stack className='from-right' width={{lg: '45%'}} >
+              <Stack className='from-right'  width={{lg: '45%'}} >
               <ImageSelectedNow x1='block' x2='none' x3='none' Img={Images.heroImageM} />
               <ImageSelectedNow x1='none' x2='block' x3='none' Img={Images.heroImageT} />
               <ImageSelectedNow x1='none' x2='none' x3='block' Img={Images.heroImageD} />
+              <img src={Images.glow } alt='' className='glow'/>
               </Stack>
               </Stack>
              
