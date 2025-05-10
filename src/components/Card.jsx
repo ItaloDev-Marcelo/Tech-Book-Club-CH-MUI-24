@@ -11,10 +11,12 @@ const CardComponent = ({Tx1, Tx2, Width, Border, ImageText, bgColor,btnLabel,
       
       
    return (
-     <Card className='from-top card' elevation={5}  sx={{margin: {xs: '1.5em 0', lg: '0 1em'}, padding: '1em'}}>
+     <Card className='from-top card' elevation={5}
+       sx={{margin: {xs: '1.5em 0', lg: '0 1em'}, padding: '1em'}}>
        <CardContent>
          <Stack>
-             <Typography variant='h2' fontSize={{xs: '1.7em', lg: '1.6em'}} lineHeight={2}>{CardT1} <br/> {`${CardT2}${month ? '/month' : ''}`} </Typography>
+             <Typography variant='h2' fontSize={{xs: '1.7em', lg: '1.6em'}} 
+             lineHeight={2}> {CardT1} <br/> {CardT2}{month ? <small>/month</small> : ''} </Typography>
              <hr/>
          </Stack>
           <CheckComponent Text={Tx1} />

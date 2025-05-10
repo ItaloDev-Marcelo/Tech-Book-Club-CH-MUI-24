@@ -5,7 +5,10 @@ const Btn = ({W1, W2, W3,Border,Image, imageTxt, bgColor,btnLabel}) => {
         <Button className='btn' sx={{width: {xs: W1, md: W2, lg: W3}, border: 
         Border, backgroundColor: bgColor }}>
             {btnLabel}
-            <Stack sx={{display: imageTxt ? 'block' : 'none', position: 'relative', left: {xs: '-.5em', lg: '1.5em'}}}>
+            <Stack sx={{display: imageTxt ? 'block' : 'none', position: 'relative', 
+                left: {xs: '-.5em', md: '.5em', lg: '1.5em'}, top: {md: '.2em', lg: '0'}}}
+                
+                >
                 <img src={Image} alt='imageTxt' />
             </Stack>
         </Button>

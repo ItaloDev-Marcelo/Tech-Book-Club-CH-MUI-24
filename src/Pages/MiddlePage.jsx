@@ -10,7 +10,7 @@ export default function MiddlePage() {
          <Stack component='section' className='Membership-options'>
             <Typography variant="h4" className="from-top Title"
              marginY={{xs: '.5em', lg: '2em'}}
-             textAlign={{lg: 'center'}}>Membership options</Typography>
+             textAlign={{lg: 'center'}}  fontSize={{xs: '2.3em', lg: '3.2em'}} >Membership options</Typography>
             <Stack id='card-container' marginY='2em'  sx={{display: 'flex',flexDirection: 
                {xs: 'column', md: 'row'},
                flexWrap: {xs: 'no-wrap', md: 'wrap', lg: 'no-wrap'},

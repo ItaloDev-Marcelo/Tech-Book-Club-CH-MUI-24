@@ -27,11 +27,11 @@ export default function Journey() {
       <Typography variant="h4" textAlign={{lg: 'center'}} 
       fontSize={{xs: '2.3em', lg: '3.2em'}} padding='.2em' 
 
-       marginY='1.2em'  width={{xs: '400px', lg: '100%'}} className="Title">Your tech reading journey</Typography>
+       marginY='1.2em'  width={{xs: '400px', md: '75%', lg: '100%'}} className="Title">Your tech reading journey</Typography>
       <img src={Images.glow } alt='' className='glow-2'/>
       <Box id="journal-list" className='from-top'
        sx={{display: 'flex', flexDirection: {xs: 'column', lg: 'row'}, 
-       justifyContent: {lg: 'space-between'}, padding: {xs: '0', lg: ' 0 2em'}}}>
+       justifyContent: {lg: 'space-between'}, padding: {xs: '0', md: '0 .4em', lg: ' 0 2em'}}}>
        
         {
           JOURNEYDATA.map((item, index) => {
@@ -51,7 +51,7 @@ export default function Journey() {
                         </Stack>
                      </Stack>
                      <Typography variant="p" className="journey-text title" 
-                     marginY={{xs: 1, lg: 0}} marginLeft={{lg: '1.7em'}} width={{xs: '290px', lg: '200px'}}>{item.title}</Typography>
+                     marginY={{xs: 1, lg: 0}} marginLeft={{lg: '1.7em'}} width={{xs: '290px',md: '500px', lg: '200px'}}>{item.title}</Typography>
                 </Stack>
             )
           })  

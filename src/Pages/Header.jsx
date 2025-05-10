@@ -36,7 +36,7 @@ export default function Header() {
                 </Box>
               </Stack>
               
-              <Stack className='from-right'  width={{lg: '45%'}} >
+              <Stack className='from-right no-way-out'  width={{lg: '45%'}} >
               <ImageSelectedNow x1='block' x2='none' x3='none' Img={Images.heroImageM} />
               <ImageSelectedNow x1='none' x2='block' x3='none' Img={Images.heroImageT} />
               <ImageSelectedNow x1='none' x2='none' x3='block' Img={Images.heroImageD} />

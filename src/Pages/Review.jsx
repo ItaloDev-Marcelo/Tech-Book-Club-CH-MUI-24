@@ -8,10 +8,10 @@ export default function Review() {
            <Stack alignSelf={{md: 'center' }}>
            <Stars/>
            </Stack>
-           <Typography variant="h4" className="from-top" 
-           textAlign={{md: 'center'}} padding={{xs: '1em 0', lg: '1em 4.5em'}}>"This book club transformed my technical 
+           <Typography variant="h4" className="from-top Review"   fontWeight={600}
+           textAlign={{lg: 'center'}} padding={{xs: '1em 0', lg: '1em 4.5em'}}>" This book club transformed my technical 
             reading from a solitary activity into an 
-            enriching community experience. The discussions are gold!"</Typography>
+            enriching community experience. The discussions are gold! "</Typography>
            <Typography variant="p" alignSelf={{md: 'center' }} className="author text" >Sarah Chen, Software Architect</Typography>
         </Stack>
     )
